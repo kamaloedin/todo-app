@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To Do App</title>
+</head>
+
+<body>
+    <header class="head_bar">
+        <h1 class="head_title">Todo App</h1>
+    </header>
+    <main>
+        <section class="create_form card">
+            <h2>Create a list</h2>
+            <form id="inputForm">
+                <div class="form_group">
+                    <label for="inputTodoList">Todo List: </label>
+                    <input id="inputTodoList" type="text" placeholder="Input the activity you want to do here" required>
+                </div>
+                <div class="form_group">
+                    <label for="inputDate">Deadline: </label>
+                    <input id="inputDate" type="date" placeholder="Input deadline here" required>
+                </div>
+                <button id="submitButton" type="submit">Create</button>
+            </form>
+        </section>
+
+        <div class="left_content">
+            <section class="uncompleted_list card">
+                <h2>Uncompleted Lists</h2>
+                <hr>
+                <div id="uncompletedList">
+
+                </div>
+                
+            </section>
+        </div>
+
+        <aside>
+            <section class="completed_list card">
+                <h2>Completed Lists</h2>
+                <hr>
+                <div id="completedList">
+
+                </div>    
+                
+            </section>
+        </aside>
+    </main>
+    <footer></footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
